@@ -3,6 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.typebot.io/widget.js" defer></script>
+    <script>
+        const typebotInitScript = document.createElement("script");
+        typebotInitScript.type = "module";
+        typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0/dist/web.js'
+  
+        Typebot.initStandard({ typebot: "customer-support-3l60bam" });
+        `;
+        document.body.append(typebotInitScript);
+    </script>
+
+    
     <title>Kendo Chatbot</title>
     <style>
         * {
@@ -171,7 +184,7 @@
     </style>
 </head>
 <body>
-    
+    <typebot-standard style="width: 100%; height: 600px; "></typebot-standard>
     <div class="background-pattern"></div>
     <div class="zen-circle"></div>
     
@@ -184,22 +197,12 @@
         <div class="instruction">
             Please click the chatbot icon <span class="chatbot-icon">💬</span> to continue your journey into the world of Kendo
         </div>
-
-        <typebot-standard style="width: 100%; height: 600px; "></typebot-standard>
         
         <div class="decorative-line"></div>
     </div>
 
-    <script>
-        const typebotInitScript = document.createElement("script");
-        typebotInitScript.type = "module";
-        typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0/dist/web.js'
-  
-        Typebot.initStandard({ typebot: "customer-support-3l60bam" });
-        `;
-        document.body.append(typebotInitScript);
-    </script>
-
+    
 </body>
 </html>
+
 
